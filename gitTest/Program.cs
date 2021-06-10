@@ -36,7 +36,14 @@ namespace gitTest {
                         day = "Invalid value";
                         break;
                 }
-                Console.WriteLine("Day: " + day);
+                if (number > 1 && number < 7) {
+                    Console.WriteLine("Day: " + day + " - Weekday");
+                } else if (number == 1 || number == 7){
+                    Console.WriteLine("Day: " + day + " - Weekend");
+                }
+                else {
+                    Console.WriteLine(day);
+                }
             }
         }
     }
